@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="template_styles.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/file-upload.js"></script>
+	<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+	<script src="js/parallax.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+				$(".oneSimbImg a[rel=group]").fancybox({
+					padding: 0,
+					helpers: {
+						overlay: {
+							locked: false
+						}
+						}
+					});
+
+				//маска ввода для телефона
+				$("#phone").mask("+7 (999) 999-9999");
+
+				//загрузка файла
+				$('.buttonBlockFile #upload').hover(
+					function(){$('.selectbutton').addClass('hover');},
+					function(){$('.selectbutton').removeClass('hover');}
+				);
+
+				//планая прокрутка до якоря
+				$('a.sloganButton').click(function () { 
+					 elementClick = $(this).attr("href");
+					 destination = $(elementClick).offset().top;
+					 
+					 $('html,body').animate( { scrollTop: destination }, 1100 );
+					 
+					 return false;
+				   });
+				
+			});
+
+		</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+	
+	
+	<header class="header">
+		<div class="headerContent center940">
+			<div class="logo">
+				<a href="/">Покупай местное</a>	
+			</div>
+			
+		</div>
+
+	</header><!-- .header-->
+
+	<main class="content">
+	
+		<div class="slogan center940">
+			<div class="slognText">
+				Архангельская область<br/>
+				выбирает свой<br/>
+				продовольственный<br/>
+				символ!<br/>
+			</div>
+			<a href="#mestnoe" class="sloganButton">участвуй сейчас!</a>
+
+		</div>
+		<div class="greyBlock">
+			<div class="center940">
+				<div class="redStr"></div>
+				<div class="titlePM">Покупай местное!</div>
+				<div class="textPM">
+					<p>Проект <a href="#">«Покупай местное»</a> призван помочь производителям продуктов из Архангельской области привлечь внимание покупателей к своим товарам.</p>
+
+					<p>Сегодня мы проводим открытый конкурс по выбору символа нашего проекта. Давайте все вместе выберем яркий, запоминающийся и связанный только с Архангельской областью образ.</p>
+
+					<p>Наши дизайнеры на его основе создадут специальный знак, которым будет отмечаться только качественная продукция, выращенная и произведенная на русском Севере!</p>
+
+				</div>
+				<div class="titleWhy">Почему нужно покупать продукты местного производства</div>
+				
+				<div class="whyAll">
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico1.png" alt=""></div>
+						<div class="whyOneTtl">Они более свежие</div>
+						<div class="whyOneTxt">На дорогу от самого дальнего уголка региона до прилавка продуктам требуется менее суток.</div>
+					</div>
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico2.png" alt=""></div>
+						<div class="whyOneTtl">Они более натуральные</div>
+						<div class="whyOneTxt">Поскольку производители ориентируются на близкий рынок,
+в такие продукты добавляют меньше консервантов, загустителей и т.п.</div>
+					</div>
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico3.png" alt=""></div>
+						<div class="whyOneTtl">Они экологичней</div>
+						<div class="whyOneTxt">Благодаря огромной территории
+в Архангельской области сохранились уголки чистой природы: водоемы, луга, лес, дары которых сохраняют первозданную чистоту.</div>
+					</div>
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico4.png" alt=""></div>
+						<div class="whyOneTtl">Они создают рабочие места</div>
+						<div class="whyOneTxt">В сельском хозяйстве и перерабатывающей промышленности занято … человек, покупая местные продукты, вы обеспечиваете их зарплату.</div>
+					</div>
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico5.png" alt=""></div>
+						<div class="whyOneTtl">Они поддерживают экономику области</div>
+						<div class="whyOneTxt">Поскольку производители ориентируются на близкий рынок,
+в такие продукты добавляют меньше консервантов, загустителей и т.п.</div>
+					</div>
+					<div class="whyOne">
+						<div class="whyOneImg"><img src="images/ico6.png" alt=""></div>
+						<div class="whyOneTtl">Они помогают людям</div>
+						<div class="whyOneTxt">Благодаря огромной территории
+в Архангельской области сохранились уголки чистой природы: водоемы, луга, лес, дары которых сохраняют первозданную чистоту.</div>
+					</div>
+				</div>
+				
+				<div class="redStrBottom"></div>
+			</div>
+			<div class="shadowTop"></div>
+			<div class="shadowBottom"></div>
+		</div>
+
+		<div class="blockForm center940" id="mestnoe">
+			<div class="blockFormTtl">участвуй в розыгрыше приза!</div>
+			<form action="" class="selSimbol">
+				<div class="center700">
+					<div class="outer3input">
+						<div class="inner3input">
+							<div class="label">Ваше имя <span>*</span></div>
+							<input type="text">
+						</div>
+						<div class="inner3input">
+							<div class="label">E-mail <span>*</span></div>
+							<input type="text">
+						</div>
+						<div class="inner3input">
+							<div class="label">Tелефон</div>
+							<input type="text" id="phone">
+						</div>
+					</div>
+					<div class="inner1input">
+						<div class="label">C каким символом у Вас ассоциируется Архангельская область? <span>*</span></div>
+						<select name="" id="">
+							<option value="">Вариант1</option>
+							<option value="">Вариант2</option>
+						</select>
+					</div>
+					<div class="inner1input">
+						<div class="label">Напишите свой любимый местный продукт <span>*</span></div>
+						<select name="" id="">
+							<option value="">Вариант1</option>
+							<option value="">Вариант2</option>
+						</select>
+					</div>
+					<div class="inner1input">
+						<div class="label">Выбери из вариантов современный образ Архангельской области <span>*</span></div>
+						<select name="" id="">
+							<option value="">Вариант1</option>
+							<option value="">Вариант2</option>
+						</select>
+					</div>
+				</div>
+				<div class="allSimb">
+					<div class="oneSimb">
+						<div class="oneSimbTtl">Сеня Малина на налиме</div>
+						<div class="oneSimbImg">
+							<a href="images/senyamalina.jpg" rel="group">
+								<img src="images/senyamalina.png" alt="">
+								<div class="whithBg"></div>
+								<div class="zoom"></div>
+							</a>
+						</div>
+						
+					</div>
+					<div class="oneSimb">
+						<div class="oneSimbTtl">Архангельская высотка</div>
+						<div class="oneSimbImg">
+							<a href="images/visotka.jpg" rel="group">
+								<img src="images/visotka.png" alt="">
+								<div class="whithBg"></div>
+								<div class="zoom"></div>
+							</a>
+						</div>
+						
+					</div>
+					<div class="oneSimb">
+						<div class="oneSimbTtl">Обелиск Севера</div>
+						<div class="oneSimbImg">
+							<a href="images/obelisk-severa.jpg" rel="group">
+								<img src="images/obelisk severa.png" alt="">
+								<div class="whithBg"></div>
+								<div class="zoom"></div>
+							</a>
+							
+						</div>
+						
+					</div>
+					<div class="oneSimb">
+						<div class="oneSimbTtl">Кораблик</div>
+						<div class="oneSimbImg">
+							<a href="images/korablik.jpg" rel="group">
+								<img src="images/korablik.png" alt="">
+								<div class="whithBg"></div>
+								<div class="zoom"></div>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="center700">
+					<div class="label">Предложи свой символ Архангельской области</div>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				
+					<div class="buttonBlock">
+						<div class="buttonBlockFile">
+								<div id="fileformlabel">Прикрепите файл своего варианта</div>
+								<div class="selectbutton"></div>
+								<input type="file" name="" value="" id="upload" onchange="getName(this.value);" />
+
+						</div>
+						<div class="buttonBlockSubm"><input type="submit" value="Отправить"></div>
+					</div>
+					<div class="bottomRule">
+						Работы на конкурс принимаются с 1 сентября  по 1 октября 2015 г. включительно до 23:59 по Мск.<br/>
+						Условия проведения конкурса и политика конфиденциальности
+
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</main><!-- .content -->
+	<!-- Parallax foreground -->
+	<div id="parallax-bg1">
+		<img id="bg1_1" src="images/moroshka1.png" />
+		<img id="bg1_2" src="images/grib.png" />
+		<img id="bg1_3" src="images/shipovnik1.png" />
+	</div>
+	
+	<!-- Parallax  midground clouds -->
+	<div id="parallax-bg2">
+		<img id="bg2_1" src="images/chernika2.png"/>
+		<img id="bg2_2" src="images/moroshka3.png" />
+		<img id="bg2_3" src="images/listik.png" />
+	</div>
+	
+	<!-- Parallax  background clouds -->
+	<div id="parallax-bg3">
+		<img id="bg3_1" src="images/chernika1.png"/>
+		<img id="bg3_2" src="images/moroshka2.png" />
+		<img id="bg3_3" src="images/smorodina.png" />
+		<img id="bg3_4" src="images/shipovnik2.png" />
+	</div>
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<div class="center940 footerInner">
+		<div class="developers">
+			<a href="http://webax.org" alt="Создано в Webax" title="Разработка сайтов"><img src="images/webax.png" alt=""></a>
+			<div class="madInWbx">Создано в Webax</div>
+		</div>
+		<div class="copy">
+			
+			<div class="copyText">
+				© Все права защищены<br/>
+				2015 г.
+			</div>
+		</div>
+		<div class="tovarbottom">
+			<div class="tovar">товар<span>29</span></div>
+		</div>
+	</div>
+</footer><!-- .footer -->
+
+</body>
+</html>
